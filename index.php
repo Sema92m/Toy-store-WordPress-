@@ -242,7 +242,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div id="map" class="contacts__map">
-                        </div>
+                            <div style="width:100%;height:400px;margin-left:auto;margin-right:auto" class="wp-block-gutenberg-yandex-block-map" data-params="{&quot;height&quot;:&quot;400px&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;lat&quot;:55.738164984877976,&quot;lon&quot;:37.50722765922547,&quot;pm_lat&quot;:53.918777,&quot;pm_lon&quot;:27.562007,&quot;pm_balloon&quot;:&quot;&quot;,&quot;pm_hint&quot;:&quot;&quot;,&quot;zoom&quot;:16,&quot;has_placemark&quot;:false}">
+                            </div>
                     </div>
                 </div>
                 <div class="row">
@@ -359,17 +360,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="title contacts__minititle">Оставьте ваш отзыв</div>
-                        <form action="#" class="contacts__feed">
-                            <label for="feedname">
-                                Ваше имя <span>*</span>
-                            </label>
-                            <input required type="text" id="feedname" name="feedname">
-
-                            <label for="feedtext">
-                                Ваш отзыв <span>*</span>
-                            </label>
-                            <textarea required name="feedtext" id="feedtext"></textarea>
-                            <button class="minibutton">Отправить</button>
+                        <div class='contacts__feed'>
+                            <?php echo do_shortcode('[contact-form-7 id="168" title="Форма отзывов"]'); ?>
+                        </div>
 
                             <svg class="lds-spinner" width="65px"  height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none;"><g transform="rotate(0 50 50)">
                                     <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#013476">

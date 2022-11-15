@@ -12,22 +12,7 @@
                     Оставьте ваш вопрос здесь
                 </div>
                 <form action="#">
-                    <div class="reply__wrapper">
-                        <div>
-                            <label for="name">Ваше имя <span>*</span></label>
-                            <input name="name" id="name" type="text" required>
-                        </div>
-                    </div>
-                    <div class="reply__wrapper">
-                        <div>
-                            <label for="mail">Email</label>
-                            <input name="mail" id="mail" type="email">
-                        </div>
-                        <div>
-                            <label for="phone">Ваш телефон <span>*</span></label>
-                            <input name="phone" id="phone" type="tel" required>
-                        </div>
-                    </div>
+                <?php echo do_shortcode('[contact-form-7 id="169" title="Форма POPup"]'); ?>
                     <label for="text">Ваш вопрос <span>*</span></label>
                     <textarea required name="text" id="text"></textarea>
                     <button class="minibutton">Отправить</button>
@@ -153,5 +138,6 @@
         <?php
         wp_footer();
         ?>
+
     </body>
 </html>
